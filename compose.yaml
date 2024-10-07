@@ -1,0 +1,16 @@
+name: fse4ai
+
+services:
+  fse4ai_01:
+    image: fse4ai_01
+    build:
+      context: 01_Unix
+    stdin_open: true
+    tty: true
+
+  fse4ai_02:
+    image: fse4ai_02
+    build:
+      context: 02_Unix
+    stdin_open: true
+    tty: true
