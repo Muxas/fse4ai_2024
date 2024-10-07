@@ -14,3 +14,17 @@ services:
       context: 02_Unix
     stdin_open: true
     tty: true
+
+  fse4ai_04_server:
+    image: fse4ai_04_server
+    build:
+      context: 04_remote
+      dockerfile: Dockerfile.server
+
+  fse4ai_04_client:
+    image: fse4ai_04_client
+    build:
+      context: 04_remote
+      dockerfile: Dockerfile.client
+    stdin_open: true
+    tty: true
