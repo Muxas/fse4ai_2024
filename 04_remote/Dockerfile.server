@@ -18,7 +18,8 @@ RUN apt update && \
     vim \
     tmux \
     screen \
-    openssh-server
+    openssh-server \
+    rsync
 
 RUN yes | unminimize
 

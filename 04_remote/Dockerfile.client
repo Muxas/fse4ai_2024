@@ -18,7 +18,8 @@ RUN apt update && \
     unzip \
     sed \
     vim \
-    ssh
+    ssh \
+    rsync
 
 RUN yes | unminimize
 
